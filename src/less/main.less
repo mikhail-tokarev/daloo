@@ -1,0 +1,27 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+@import "retina.less";
+
+
+body {
+  padding-top: 100px;
+}
+
+.navbar {
+  text-transform: uppercase;
+
+  .navbar-brand {
+    padding-left: 56px;
+    .logo {
+      display: block;
+      width: 210px;
+      height: 50px;
+      .at2x('/logo.png', 210px, 50px);
+    }
+  }
+
+  .navbar-nav li a {
+    font-size: 21pt;
+    padding: 36px 20px 10px 20px;
+  }
+}

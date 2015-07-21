@@ -1,0 +1,15 @@
+{
+  "name": "daloo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.0",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-open": "~0.2.3"
+  }
+}
