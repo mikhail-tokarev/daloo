@@ -24,18 +24,12 @@ module.exports = function (grunt) {
                     'www/css/main.css': 'src/less/main.less'
                 }
             }
-        },
-        open: {
-            dev: {
-                path: 'http://localhost:8080/index.html'
-            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-open');
 
-    grunt.registerTask('default', ['less', 'connect', 'open', 'watch']);
+    grunt.registerTask('default', ['less', 'connect', 'watch']);
 };
