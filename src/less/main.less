@@ -2,6 +2,12 @@
 @import "variables.less";
 @import "retina.less";
 
+.img(@file, @width, @height) {
+  display: block;
+  width: @width;
+  height: @height;
+  .at2x(@file, @width, @height);
+}
 
 body {
   padding-top: 100px;
@@ -22,5 +28,24 @@ body {
   .navbar-nav li a {
     font-size: 21pt;
     text-transform: uppercase;
+  }
+}
+
+.carousel {
+  .item {
+    height: 720px;
+  }
+
+  .icon-prev {
+    .img('/i/left.gif', 50px, 100px);
+    &:before {
+      content: ' ';
+    }
+  }
+  .icon-next {
+    .img('/i/right.gif', 50px, 100px);
+    &:before {
+      content: ' ';
+    }
   }
 }
