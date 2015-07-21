@@ -1,6 +1,7 @@
 @import "bootstrap/bootstrap.less";
 @import "variables.less";
 @import "retina.less";
+@import "fa/font-awesome.less";
 
 .img(@file, @width, @height) {
   display: block;
@@ -44,5 +45,22 @@ body {
     &:before {
       content: ' ';
     }
+  }
+}
+
+#about {
+  margin-bottom: 100px;
+  h2 {
+    color: @text-color;
+    font-size: 24pt;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 18pt;
+    margin-bottom: 0;
+  }
+  .button {
+    text-decoration: none;
+    color: @text-color;
   }
 }
