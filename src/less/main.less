@@ -43,7 +43,9 @@ section {
 
 .navbar {
   .navbar-brand {
-    padding-left: 56px;
+    @media (min-width: @screen-sm-min) {
+      padding-left: 56px;
+    }
     margin-top: -20px;
     .logo {
       display: block;
